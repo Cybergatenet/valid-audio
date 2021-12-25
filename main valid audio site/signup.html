@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+  <head>
+      <meta name="viewport" content="width=device-width , initial-scale=1.0">
+      <title>campain</title>
+      <link rel="stylesheet" href="css/style.css">
+	</head>
+	
+	<body>
+        
+        <!---------nav bar menu---------->
+        
+		<nav>
+			<div class="nav-left">
+				<img src="images/logo.png" class="logo">
+				<ul>
+					<li>
+						<img src="images/notification.png">
+					</li>
+					<li>
+						<img src="images/inbox.png">
+					</li>
+					<li>
+						<img src="images/video.png">
+					</li>
+				</ul>
+			</div>
+			<div class="nav-right">
+				<div class="search-box">
+					<img src="images/search.png">
+					<input type="text" placeholder="Search">
+				</div>
+				<div class="nav-user-icon online" onclick="settingsMenuToggle();">
+					<img src="images/profile-pic.png">
+				</div>
+			</div>
+            
+            <!----------profile menu------->
+
+			<div class="settings-menu">
+				<div id="dark-btn">
+					<span></span>
+				</div>
+                	<div class="settings-menu-inner">
+					<div class="user-profile">
+						<img src="images/profile-pic.png">
+						<div>
+							<p>lymmentrix Raphael</p>
+							<a href="#">See Your Profile</a>
+						</div>
+					</div>
+					<hr>
+					<div class="user-profile">
+						<img src="images/feedback.png">
+						<div>
+							<p>Give Feedback</p>
+							<a href="#">Help us to improve the new design</a>
+						</div>
+					</div>
+					<hr>
+
+					<div class="settings-links">
+						<img src="images/setting.png" class="settings-icon">
+						<a href="index.html">Home</a>
+						<img src="images/arrow.png" width="10px">
+					</div>
+					<div class="settings-links">
+						<img src="images/setting.png" class="settings-icon">
+						<a href="books_page.html">Books</a>
+						<img src="images/arrow.png" width="10px">
+					</div>
+					<div class="settings-links">
+						<img src="images/help.png" class="settings-icon">
+						<a href="categories.html">categories</a>
+						<img src="images/arrow.png" width="10px">
+					</div>
+					<div class="settings-links">
+						<img src="images/display.png" class="settings-icon">
+						<a href="about.html">About</a>
+						<img src="images/arrow.png" width="10px">
+					</div>
+					<div class="settings-links">
+						<img src="images/logout.png" class="settings-icon">
+						<a href="signup.html">Sign Up</a>
+						<img src="images/arrow.png" width="10px">
+					</div>
+				</div>
+			</div>
+		</nav>
+          <!--login-->
+		  <div class="logins">
+		<div class="wrapper">
+			<div class="title-text">
+			   <div class="title login">
+				  Login Form
+			   </div>
+			   <div class="title signup">
+				  Signup Form
+			   </div>
+			</div>
+			<div class="form-container">
+			   <div class="slide-controls">
+				  <input type="radio" name="slide" id="login" checked>
+				  <input type="radio" name="slide" id="signup">
+				  <label for="login" class="slide login">Login</label>
+				  <label for="signup" class="slide signup">Signup</label>
+				  <div class="slider-tab"></div>
+			   </div>
+			   <div class="form-inner">
+				  <form action="#" class="login">
+					 <div class="field">
+						<input type="text" placeholder="Email Address" required>
+					 </div>
+					 <div class="field">
+						<input type="password" placeholder="Password" required>
+					 </div>
+					 <div class="pass-link">
+						<a href="#">Forgot password?</a>
+					 </div>
+					 <div class="field btn">
+						<div class="btn-layer"></div>
+						<input type="submit" value="Login">
+					 </div>
+					 <div class="signup-link">
+						Not a member? <a href="">Signup now</a>
+					 </div>
+				  </form>
+				  <form action="#" class="signup">
+					 <div class="field">
+						<input type="text" placeholder="Email Address" required>
+					 </div>
+					 <div class="field">
+						<input type="password" placeholder="Password" required>
+					 </div>
+					 <div class="field">
+						<input type="password" placeholder="Confirm password" required>
+					 </div>
+					 <div class="field btn">
+						<div class="btn-layer"></div>
+						<input type="submit" value="Signup">
+					 </div>
+				  </form>
+			   </div>
+			</div>
+		 </div>
+		 </div>
+		 <script>
+			const loginText = document.querySelector(".title-text .login");
+			const loginForm = document.querySelector("form.login");
+			const loginBtn = document.querySelector("label.login");
+			const signupBtn = document.querySelector("label.signup");
+			const signupLink = document.querySelector("form .signup-link a");
+			signupBtn.onclick = (()=>{
+			  loginForm.style.marginLeft = "-50%";
+			  loginText.style.marginLeft = "-50%";
+			});
+			loginBtn.onclick = (()=>{
+			  loginForm.style.marginLeft = "0%";
+			  loginText.style.marginLeft = "0%";
+			});
+			signupLink.onclick = (()=>{
+			  signupBtn.click();
+			  return false;
+			});
+		 </script>
+
+
+		<!---footer-->
+        <!----contact form-->
+		<div class="container">
+			<span class="big-circle"></span>
+			<img src="img/shape.png" class="square" alt="" />
+			<div class="form">
+			  <div class="contact-info">
+				<h3 class="title">Let's get in touch</h3>
+				<p class="text">
+				  Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+				  dolorum adipisci recusandae praesentium dicta!
+				</p>
+	  
+				<div class="info">
+				  <div class="information">
+					<img src="img/location.png" class="icon" alt="" />
+					<p>92 Cherry Drive Uniondale, NY 11553</p>
+				  </div>
+				  <div class="information">
+					<img src="img/email.png" class="icon" alt="" />
+					<p>lorem@ipsum.com</p>
+				  </div>
+				  <div class="information">
+					<img src="img/phone.png" class="icon" alt="" />
+					<p>123-456-789</p>
+				  </div>
+				</div>
+	  
+				<div class="social-media">
+				  <p>Connect with us :</p>
+				  <div class="social-icons">
+					<a href="#">
+					  <i class="fab fa-facebook-f"></i>
+					</a>
+					<a href="#">
+					  <i class="fab fa-twitter"></i>
+					</a>
+					<a href="#">
+					  <i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+					  <i class="fab fa-linkedin-in"></i>
+					</a>
+				  </div>
+				</div>
+			  </div>
+	  
+			  <div class="contact-form">
+				<span class="circle one"></span>
+				<span class="circle two"></span>
+	  
+				<form action="index.html" autocomplete="off">
+				  <h3 class="title">Contact us</h3>
+				  <div class="input-container">
+					<input type="text" name="name" class="input" />
+					<label for="">Username</label>
+					<span>Username</span>
+				  </div>
+				  <div class="input-container">
+					<input type="email" name="email" class="input" />
+					<label for="">Email</label>
+					<span>Email</span>
+				  </div>
+				  <div class="input-container">
+					<input type="tel" name="phone" class="input" />
+					<label for="">Phone</label>
+					<span>Phone</span>
+				  </div>
+				  <div class="input-container textarea">
+					<textarea name="message" class="input"></textarea>
+					<label for="">Message</label>
+					<span>Message</span>
+				  </div>
+				  <input type="submit" value="Send" class="btn" />
+				</form>
+			  </div>
+			</div>
+		  </div>
+		
+	
+		<div class="contact-col"></div>
+	</div>
+		</section>
+		<section class="footer">
+			<h4>Valid Audio Reasoning</h4>
+			<p>This site is brought to you to give you sensitive and  pure unique way of reading, To study this days now is more likely based on
+				 technical system version,<br> So that's why we created this site to help student to be able to study as they wont.</p>
+
+		</section>
+		
+        		<script src="js/script.js"></script>
+	</body>
+</html>
