@@ -14,6 +14,18 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import ProfileScreen from './screens/ProfileScreen';
 import OrdersScreen from './screens/OrdersScreen';
+import Footer from './components/Footer';
+
+
+
+// To address issues that do not require attention, run:
+//   npm audit fix
+
+// To address all issues (including breaking changes), run:
+//   npm audit fix --force
+
+// Run `npm audit` for details.
+
 
 function App() {
   const userSignin = useSelector((state) => state.userSignin);
@@ -31,7 +43,7 @@ function App() {
         <header className="header">
           <div className="brand">
             <button onClick={openMenu}>&#9776;</button>
-            <Link to="/">amazona</Link>
+            <Link to="/">Valid Audio</Link>
           </div>
           <div className="header-links">
             <a href="cart.html">Cart</a>
@@ -54,17 +66,20 @@ function App() {
           </div>
         </header>
         <aside className="sidebar">
-          <h3>Shopping Categories</h3>
+          <h3>Book Categories</h3>
           <button className="sidebar-close-button" onClick={closeMenu}>
             x
           </button>
           <ul className="categories">
             <li>
-              <Link to="/category/Pants">Pants</Link>
+              <Link to="/category/motivational">Motivational</Link>
             </li>
 
             <li>
-              <Link to="/category/Shirts">Shirts</Link>
+              <Link to="/category/spiritual">Spiritual</Link>
+            </li>
+            <li>
+              <Link to="/category/review">Review</Link>
             </li>
           </ul>
         </aside>
@@ -85,7 +100,7 @@ function App() {
             <Route path="/" exact={true} component={HomeScreen} />
           </div>
         </main>
-        <footer className="footer">All right reserved.</footer>
+        <Footer />
       </div>
     </BrowserRouter>
   );

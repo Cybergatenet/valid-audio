@@ -1,7 +1,7 @@
 {
-  "name": "amazona",
+  "name": "valid-audio",
   "version": "1.0.0",
-  "description": "Demo : https://amazonaapp.herokuapp.com/",
+  "description": "Demo : https://validaudio.herokuapp.com/",
   "main": "index.js",
   "dependencies": {
     "aws-sdk": "^2.702.0",
@@ -24,7 +24,7 @@
     "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react-hooks": "^2.5.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.15"
   },
   "scripts": {
     "start": "nodemon --watch backend --exec babel-node backend/server.js",
@@ -33,14 +33,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/basir/amazona.git"
+    "url": "git+https://github.com/Cybergatenet/valid-audio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/basir/amazona/issues"
+    "url": "https://github.com/Cybergatenet/valid-audio/issues"
   },
-  "homepage": "https://github.com/basir/amazona#readme",
+  "homepage": "https://github.com/Cybergatenet/valid-audio#readme",
   "engines": {
     "node": "12.4.0",
     "npm": "6.9.0"
